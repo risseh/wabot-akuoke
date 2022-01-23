@@ -149,8 +149,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌿 *KONNICHIWA* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n*Subscribe My Channel*\n*https://www.youtube.com/c/BOTINDO*\n🌿 *Dᴏɴᴛ Fᴏʀɢᴇᴛ Dɪsᴄʀɪᴘᴛɪᴏɴ* \n *${mdata.desc}*\n ${time_wel} -  ${time_welc}`
-                welcomeBut = [{buttonId:`#owner`,buttonText:{displayText:'OWNER'},type:1}, {buttonId:`bebantot`,buttonText:{displayText:'KONNICHIWA BEBAN'},type:1}]
+                teks = `🌿 *KONNICHIWA* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n*Subscribe My Channel*\n*https://www.youtube.com/*\n🌿 *Dᴏɴᴛ Fᴏʀɢᴇᴛ Dɪsᴄʀɪᴘᴛɪᴏɴ* \n *${mdata.desc}*\n ${time_wel} -  ${time_welc}`
+                welcomeBut = [{buttonId:`#owner`,buttonText:{displayText:'OWNER'},type:1}, {buttonId:`bebantot`,buttonText:{displayText:'BEBAN'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -660,17 +660,17 @@ let settingstatus = 0;
 				Semoga harimu menyenangkan
 				
 INFO CREATOR BOT
-*Nama : Aprilia*
-*Instagram : @aprigans_*
-*YouTube : BOT INDO*
-*Link Yt : https://www.youtube.com/c/BOTINDO*
-*WhatsApp : wa.me/628811929177*
+*Nama : Rizqi*
+*Instagram : @Rizqi_fath*
+*YouTube : Tidak punya*
+*Link Yt : https://www.youtube.com/*
+*WhatsApp : wa.me/6283136262784*
 
 -----------------------------------•
 
 INFO BOT
 *Nama Bot : ${namabot}*
-*Author : Aprilia*
+*Author : Rizqi*
 *Base : Mhankbarbar*
 *Library : Bailey*
 *Nama Owner : ${namaowner}*
@@ -731,17 +731,17 @@ SEMOGA HARIMU MENYENANGKAN
 -----------------------------------•
 
 INFO CREATOR BOT
-*Nama : Aprilia*
-*Instagram : @aprigans_*
-*YouTube : BOT INDO*
-*Link Yt : https://www.youtube.com/c/BOTINDO*
-*WhatsApp : wa.me/628811929177*
+*Nama : Rizqi*
+*Instagram : @Rizqi_Fath*
+*YouTube : Tidak punya*
+*Link Yt : https://www.youtube.com/*
+*WhatsApp : wa.me/6283136262784*
 
 -----------------------------------•
 
 INFO BOT
 *Nama Bot : ${namabot}*
-*Author : Aprilia*
+*Author : Rizwi*
 *Base : Mhankbarbar*
 *Library : Bailey*
 *Nama Owner : ${namaowner}*
@@ -1571,7 +1571,7 @@ _${prefix}grafitytext_
 _${prefix}narutobanner_
 _${prefix}tahta_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -1593,7 +1593,7 @@ tete = [
 ttbut = {
 imageMessage: pnn.message.imageMessage,
 contentText: `Hai Kak ${pushname} Bot Telah Menmekatkan Title Tersebut , Silahkan Pilih Tombol Akses Di Bawah`,
-footerText: `_*© BOT INDO*_`,
+footerText: `_*© BOT Rizqi*_`,
 buttons: tete,
 headerType: 4
 }
@@ -1605,20 +1605,20 @@ if (isBanned) return reply (mess.banned)
 reply(mess.wait)
 anu = await fetchJson (`https://api-aprilia-xyz.herokuapp.com/api/tiktok?url=${args.join(' ')}`)
 buffer = await getBuffer (anu.result.nowm)
-client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'SUBS BOT INDO SU'})
+client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'TerimaKasih'})
 break
 case 'tiktokwm':
              if (!q) return reply('Linknya?')
              if (!q.includes('tiktok.com')) return reply(mess.error.Iv)
              reply(mess.wait)
-             buffer = await getBuffer(`https://api.dapuhy.xyz/api/socialmedia/tiktokwithwm?url=${args.join(' ')}&apikey=B0ZTfKR00k`)
-             client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'SUBS BOT INDO SU'})
+             buffer = await getBuffer(`https://api.dapuhy.xyz/api/socialmedia/tiktokwithwm?url=${args.join(' ')}&apikey=riski12`)
+             client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'TerimaKasih})
 break
 case 'tiktokmusic':
 //woi
       if (isBanned) return reply (mess.banned)
 reply(mess.wait)
-anu = await fetchJson(`http://zekais-api.herokuapp.com/tiktokmusic?url=${args.join(' ')}&apikey=Rj9pGDhE`)
+anu = await fetchJson(`http://zekais-api.herokuapp.com/tiktokmusic?url=${args.join(' ')}&apikey=zekais`)
 buffer = await getBuffer (anu.result)
 client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
 break
@@ -1717,7 +1717,7 @@ tete = [
 ttbut = {
 imageMessage: pnn.message.imageMessage,
 contentText: TITLE,
-footerText: `_*© Aprilia*_`,
+footerText: `_*© Rizqi*_`,
 buttons: tete,
 headerType: 4
 }
@@ -1775,7 +1775,7 @@ if (isBanned) return reply (mess.banned)
 if (args.length < 1) return reply("```LINK NYA?```")
 if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply('```LINK NYA JELEK NIH```')
 reply (mess.wait)
-anu = await fetchJson (`https://api.dapuhy.xyz/api/socialmedia/ytmp4?url=${args.join(' ')}&apikey=B0ZTfKR00k`)
+anu = await fetchJson (`https://api.dapuhy.xyz/api/socialmedia/ytmp4?url=${args.join(' ')}&apikey=riski12`)
 captionnya = `TITLE BERHASIL DIDAPATKAN\n\nJudul : ${anu.result.title}\nSize : ${anu.result.size}\nKualitas Video : ${anu.result.quality}\nViews : ${anu.result.views}\nChannel : ${anu.result.channel}\nDeskripsi : ${anu.result.desc}\n\n*MOHON TUNGGU BEBERAPA MENIT BOT SEDANG MENGIRIM VIDEO*`
 buffer = await getBuffer (anu.result.thumb)
 client.sendMessage(from, buffer, image, {quoted: mek, caption: captionnya})
@@ -1855,7 +1855,7 @@ _${prefix}igdl_
 _${prefix}mediafire_
 _${prefix}facebook_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2079,9 +2079,9 @@ case 'tagall':
 							text: ress,
                          				contextInfo: {mentionedJid: [nomor]},
                      			}
-					client.sendMessage('628811929177@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('628811929177@s.whatsapp.net', options, text, {quoted: mek})
-					client.sendMessage('628811929177@s.whatsapp.net', options, text, {quoted: mek})
+					client.sendMessage('6283136262784@s.whatsapp.net', options, text, {quoted: mek})
+					client.sendMessage('6283136262784@s.whatsapp.net', options, text, {quoted: mek})
+					client.sendMessage('6283136262784@s.whatsapp.net', options, text, {quoted: mek})
 					reply('REQUEST ANDA TELAH SAMPAI KE PENGEMBANG SC, Requests palsu atau main² tidak akan ditanggapi.')
 					break
                  case 'setpp': 
@@ -2359,7 +2359,7 @@ _${prefix}sadgirl_
 _${prefix}group_
 _${prefix}meme_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2425,16 +2425,16 @@ titid = 'butuh info tentang apa ya?'
 ]);
                  break
                 case 'creator':
-                const _0x31239a=_0x24e1;function _0x5151(){const _0x3ac6fd=['38nPYHLj','4013684bzyTjv','4002545xjOMje','TEL;type=CELL;type=VOICE;waid=628811929177:+628811929177\x0a','END:VCARD','1954bStpgi','699291yjvufE','354048AfTttz','insta','CHANNEL\x20YT','ORG:\x20BOT\x20INDO;\x0a','Klik\x20Untuk\x20Mengetahui\x20Info','BEGIN:VCARD\x0a','170moxOGv','INSTAGRAM','Jeff','962766zcFrNO','2911016RpefJc','112cMjRPp','VERSION:3.0\x0a','butuh\x20info\x20tentang\x20apa\x20ya?'];_0x5151=function(){return _0x3ac6fd;};return _0x5151();}(function(_0x1f46c5,_0xf6a3d1){const _0x3c78dd=_0x24e1,_0x430ae0=_0x1f46c5();while(!![]){try{const _0x320b82=parseInt(_0x3c78dd(0x1f6))/0x1*(parseInt(_0x3c78dd(0x1fb))/0x2)+parseInt(_0x3c78dd(0x1f1))/0x3+parseInt(_0x3c78dd(0x1f7))/0x4+-parseInt(_0x3c78dd(0x1f8))/0x5+parseInt(_0x3c78dd(0x1fd))/0x6*(parseInt(_0x3c78dd(0x1f3))/0x7)+parseInt(_0x3c78dd(0x1f2))/0x8+-parseInt(_0x3c78dd(0x1fc))/0x9*(parseInt(_0x3c78dd(0x1ee))/0xa);if(_0x320b82===_0xf6a3d1)break;else _0x430ae0['push'](_0x430ae0['shift']());}catch(_0x2c1e32){_0x430ae0['push'](_0x430ae0['shift']());}}}(_0x5151,0x85cf2));function _0x24e1(_0x5f52b5,_0x371f89){const _0x5151fb=_0x5151();return _0x24e1=function(_0x24e1e2,_0x4de660){_0x24e1e2=_0x24e1e2-0x1ea;let _0x1d9d34=_0x5151fb[_0x24e1e2];return _0x1d9d34;},_0x24e1(_0x5f52b5,_0x371f89);}const vcard2=_0x31239a(0x1ed)+_0x31239a(0x1f4)+'FN:\x20APRII\x0a'+_0x31239a(0x1eb)+_0x31239a(0x1f9)+_0x31239a(0x1fa);client['sendMessage'](from,{'displayname':_0x31239a(0x1f0),'vcard':vcard2},MessageType['contact'],{'quoted':mek}),titid=_0x31239a(0x1f5),sendButMessage(from,titid,_0x31239a(0x1ec),[{'buttonId':prefix+'channel','buttonText':{'displayText':_0x31239a(0x1ea)},'type':0x1},{'buttonId':prefix+_0x31239a(0x1fe),'buttonText':{'displayText':_0x31239a(0x1ef)},'type':0x1}]);
+                const _0x31239a=_0x24e1;function _0x5151(){const _0x3ac6fd=['38nPYHLj','4013684bzyTjv','4002545xjOMje','TEL;type=CELL;type=VOICE;waid=6283136262784:+6283136262784\x0a','END:VCARD','1954bStpgi','699291yjvufE','354048AfTttz','insta','CHANNEL\x20YT','ORG:\x20BOT\x20INDO;\x0a','Klik\x20Untuk\x20Mengetahui\x20Info','BEGIN:VCARD\x0a','170moxOGv','INSTAGRAM','Jeff','962766zcFrNO','2911016RpefJc','112cMjRPp','VERSION:3.0\x0a','butuh\x20info\x20tentang\x20apa\x20ya?'];_0x5151=function(){return _0x3ac6fd;};return _0x5151();}(function(_0x1f46c5,_0xf6a3d1){const _0x3c78dd=_0x24e1,_0x430ae0=_0x1f46c5();while(!![]){try{const _0x320b82=parseInt(_0x3c78dd(0x1f6))/0x1*(parseInt(_0x3c78dd(0x1fb))/0x2)+parseInt(_0x3c78dd(0x1f1))/0x3+parseInt(_0x3c78dd(0x1f7))/0x4+-parseInt(_0x3c78dd(0x1f8))/0x5+parseInt(_0x3c78dd(0x1fd))/0x6*(parseInt(_0x3c78dd(0x1f3))/0x7)+parseInt(_0x3c78dd(0x1f2))/0x8+-parseInt(_0x3c78dd(0x1fc))/0x9*(parseInt(_0x3c78dd(0x1ee))/0xa);if(_0x320b82===_0xf6a3d1)break;else _0x430ae0['push'](_0x430ae0['shift']());}catch(_0x2c1e32){_0x430ae0['push'](_0x430ae0['shift']());}}}(_0x5151,0x85cf2));function _0x24e1(_0x5f52b5,_0x371f89){const _0x5151fb=_0x5151();return _0x24e1=function(_0x24e1e2,_0x4de660){_0x24e1e2=_0x24e1e2-0x1ea;let _0x1d9d34=_0x5151fb[_0x24e1e2];return _0x1d9d34;},_0x24e1(_0x5f52b5,_0x371f89);}const vcard2=_0x31239a(0x1ed)+_0x31239a(0x1f4)+'FN:\x20APRII\x0a'+_0x31239a(0x1eb)+_0x31239a(0x1f9)+_0x31239a(0x1fa);client['sendMessage'](from,{'displayname':_0x31239a(0x1f0),'vcard':vcard2},MessageType['contact'],{'quoted':mek}),titid=_0x31239a(0x1f5),sendButMessage(from,titid,_0x31239a(0x1ec),[{'buttonId':prefix+'channel','buttonText':{'displayText':_0x31239a(0x1ea)},'type':0x1},{'buttonId':prefix+_0x31239a(0x1fe),'buttonText':{'displayText':_0x31239a(0x1ef)},'type':0x1}]);
                  break
                 case 'channel':
-                function _0x2a67(_0x5661d6,_0x1cec61){var _0x26175e=_0x2617();return _0x2a67=function(_0x2a67b4,_0x20cd38){_0x2a67b4=_0x2a67b4-0x6a;var _0x10ba08=_0x26175e[_0x2a67b4];return _0x10ba08;},_0x2a67(_0x5661d6,_0x1cec61);}var _0x47e7ac=_0x2a67;(function(_0x552708,_0xabf90f){var _0x3fb0a3=_0x2a67,_0x543d1b=_0x552708();while(!![]){try{var _0x5605f7=parseInt(_0x3fb0a3(0x70))/0x1*(parseInt(_0x3fb0a3(0x73))/0x2)+parseInt(_0x3fb0a3(0x6f))/0x3*(-parseInt(_0x3fb0a3(0x72))/0x4)+-parseInt(_0x3fb0a3(0x6a))/0x5+parseInt(_0x3fb0a3(0x6e))/0x6+-parseInt(_0x3fb0a3(0x6c))/0x7+-parseInt(_0x3fb0a3(0x71))/0x8+parseInt(_0x3fb0a3(0x6d))/0x9;if(_0x5605f7===_0xabf90f)break;else _0x543d1b['push'](_0x543d1b['shift']());}catch(_0x4bfa5f){_0x543d1b['push'](_0x543d1b['shift']());}}}(_0x2617,0xc3f9b),reply(_0x47e7ac(0x6b)));function _0x2617(){var _0x22f9a9=['165vsqiZr','11424272ArHfMA','4EtLGoH','2216cGwWNL','7113015HfkCRz','*NIH\x20CHANNEL\x20CREATORKU*\x0a*https://www.youtube.com/c/BOTINDO*','2120706NtEbVY','37820205DrhrBh','548604OJaJGt','1560567DosKLS'];_0x2617=function(){return _0x22f9a9;};return _0x2617();}
+                function _0x2a67(_0x5661d6,_0x1cec61){var _0x26175e=_0x2617();return _0x2a67=function(_0x2a67b4,_0x20cd38){_0x2a67b4=_0x2a67b4-0x6a;var _0x10ba08=_0x26175e[_0x2a67b4];return _0x10ba08;},_0x2a67(_0x5661d6,_0x1cec61);}var _0x47e7ac=_0x2a67;(function(_0x552708,_0xabf90f){var _0x3fb0a3=_0x2a67,_0x543d1b=_0x552708();while(!![]){try{var _0x5605f7=parseInt(_0x3fb0a3(0x70))/0x1*(parseInt(_0x3fb0a3(0x73))/0x2)+parseInt(_0x3fb0a3(0x6f))/0x3*(-parseInt(_0x3fb0a3(0x72))/0x4)+-parseInt(_0x3fb0a3(0x6a))/0x5+parseInt(_0x3fb0a3(0x6e))/0x6+-parseInt(_0x3fb0a3(0x6c))/0x7+-parseInt(_0x3fb0a3(0x71))/0x8+parseInt(_0x3fb0a3(0x6d))/0x9;if(_0x5605f7===_0xabf90f)break;else _0x543d1b['push'](_0x543d1b['shift']());}catch(_0x4bfa5f){_0x543d1b['push'](_0x543d1b['shift']());}}}(_0x2617,0xc3f9b),reply(_0x47e7ac(0x6b)));function _0x2617(){var _0x22f9a9=['165vsqiZr','11424272ArHfMA','4EtLGoH','2216cGwWNL','7113015HfkCRz','*NIH\x20CHANNEL\x20CREATORKU*\x0a*https://www.youtube.com/*','2120706NtEbVY','37820205DrhrBh','548604OJaJGt','1560567DosKLS'];_0x2617=function(){return _0x22f9a9;};return _0x2617();}
                 break
 case 'info':
 function _0x5716(){var _0x4a838a=['\x0a\x0a\x20\x20‣\x20*Owner*\x20:\x20','```Lu\x20kebanned\x20kontol```','6mvVcbk','user','16RGSRmO','length','1732952mAiPZY','jid','742224WXPsTB','sendMessage','2299vLsUvQ','113551xIppSK','42mztVvc','1798785IBowzQ','split','1563408jCdKEh','6320KzeLmf','\x0a\x0a\x20\x20‣\x20*Total\x20Chat*\x20:\x20799005','78gklCUW','1880640imFHup','6pFMhWl','name'];_0x5716=function(){return _0x4a838a;};return _0x5716();}var _0x414d92=_0x19e1;(function(_0x4d9c6c,_0xb809a3){var _0x1a3bce=_0x19e1,_0x16010e=_0x4d9c6c();while(!![]){try{var _0xf9705=parseInt(_0x1a3bce(0x1ae))/0x1*(-parseInt(_0x1a3bce(0x1a1))/0x2)+-parseInt(_0x1a3bce(0x1a5))/0x3*(-parseInt(_0x1a3bce(0x1a9))/0x4)+-parseInt(_0x1a3bce(0x1b0))/0x5+-parseInt(_0x1a3bce(0x1af))/0x6*(-parseInt(_0x1a3bce(0x1b2))/0x7)+-parseInt(_0x1a3bce(0x1a7))/0x8*(parseInt(_0x1a3bce(0x1b6))/0x9)+-parseInt(_0x1a3bce(0x1b3))/0xa*(parseInt(_0x1a3bce(0x1ad))/0xb)+-parseInt(_0x1a3bce(0x1ab))/0xc*(parseInt(_0x1a3bce(0x1b5))/0xd);if(_0xf9705===_0xb809a3)break;else _0x16010e['push'](_0x16010e['shift']());}catch(_0x5932c2){_0x16010e['push'](_0x16010e['shift']());}}}(_0x5716,0xc55a2));function _0x19e1(_0x223402,_0x30077c){var _0x5716e8=_0x5716();return _0x19e1=function(_0x19e16d,_0x486ca1){_0x19e16d=_0x19e16d-0x1a1;var _0x3cb334=_0x5716e8[_0x19e16d];return _0x3cb334;},_0x19e1(_0x223402,_0x30077c);}if(isBanned)return reply(_0x414d92(0x1a4));me=client[_0x414d92(0x1a6)],teks='*‣\x20Nama\x20bot*\x20:\x20'+me[_0x414d92(0x1a2)]+'\x0a\x0a\x20\x20‣\x20*Nomor\x20Bot*\x20:\x20@'+me[_0x414d92(0x1aa)][_0x414d92(0x1b1)]('@')[0x0]+_0x414d92(0x1a3)+namaowner+'\x0a\x0a\x20\x20‣\x20*Prefix*\x20:\x20[\x20_*MULTI\x20PREFIX*_\x20]\x0a\x0a\x20\x20‣\x20*Total\x20Block\x20Contact*\x20:\x20'+blocked[_0x414d92(0x1a8)]+_0x414d92(0x1b4),buffer=await getBuffer(thumb2),client[_0x414d92(0x1ac)](from,buffer,image,{'caption':teks,'contextInfo':{'mentionedJid':[me[_0x414d92(0x1aa)]]}});
   break
                 case 'insta':
-                var _0x23b6d4=_0x3aea;function _0x5614(){var _0x27bc5f=['*NIH\x20INSTAGRAM\x20CREATORKU*\x0a*https://instagram.com/aprigans_*','28LjKAWJ','12051sbegic','661659wOyauE','20445IyNQzC','5226130UGrJBi','712882JhVcry','10zhOLZv','1600DmaIQz','1951356RgIbrg','3260492VleXxt'];_0x5614=function(){return _0x27bc5f;};return _0x5614();}function _0x3aea(_0x27e4ab,_0x54fb50){var _0x56140a=_0x5614();return _0x3aea=function(_0x3aeaa3,_0x5916c0){_0x3aeaa3=_0x3aeaa3-0xd0;var _0x412009=_0x56140a[_0x3aeaa3];return _0x412009;},_0x3aea(_0x27e4ab,_0x54fb50);}(function(_0x1932ad,_0x1b890d){var _0x358b20=_0x3aea,_0x4a621c=_0x1932ad();while(!![]){try{var _0x17936f=parseInt(_0x358b20(0xd9))/0x1+parseInt(_0x358b20(0xd1))/0x2+-parseInt(_0x358b20(0xda))/0x3+-parseInt(_0x358b20(0xd5))/0x4*(parseInt(_0x358b20(0xd2))/0x5)+parseInt(_0x358b20(0xd4))/0x6*(parseInt(_0x358b20(0xd7))/0x7)+parseInt(_0x358b20(0xd3))/0x8*(-parseInt(_0x358b20(0xd8))/0x9)+parseInt(_0x358b20(0xd0))/0xa;if(_0x17936f===_0x1b890d)break;else _0x4a621c['push'](_0x4a621c['shift']());}catch(_0x39fc92){_0x4a621c['push'](_0x4a621c['shift']());}}}(_0x5614,0xe4b34),reply(_0x23b6d4(0xd6)));
+                var _0x23b6d4=_0x3aea;function _0x5614(){var _0x27bc5f=['*NIH\x20INSTAGRAM\x20CREATORKU*\x0a*https://instagram.com/Rizqi_fath*','28LjKAWJ','12051sbegic','661659wOyauE','20445IyNQzC','5226130UGrJBi','712882JhVcry','10zhOLZv','1600DmaIQz','1951356RgIbrg','3260492VleXxt'];_0x5614=function(){return _0x27bc5f;};return _0x5614();}function _0x3aea(_0x27e4ab,_0x54fb50){var _0x56140a=_0x5614();return _0x3aea=function(_0x3aeaa3,_0x5916c0){_0x3aeaa3=_0x3aeaa3-0xd0;var _0x412009=_0x56140a[_0x3aeaa3];return _0x412009;},_0x3aea(_0x27e4ab,_0x54fb50);}(function(_0x1932ad,_0x1b890d){var _0x358b20=_0x3aea,_0x4a621c=_0x1932ad();while(!![]){try{var _0x17936f=parseInt(_0x358b20(0xd9))/0x1+parseInt(_0x358b20(0xd1))/0x2+-parseInt(_0x358b20(0xda))/0x3+-parseInt(_0x358b20(0xd5))/0x4*(parseInt(_0x358b20(0xd2))/0x5)+parseInt(_0x358b20(0xd4))/0x6*(parseInt(_0x358b20(0xd7))/0x7)+parseInt(_0x358b20(0xd3))/0x8*(-parseInt(_0x358b20(0xd8))/0x9)+parseInt(_0x358b20(0xd0))/0xa;if(_0x17936f===_0x1b890d)break;else _0x4a621c['push'](_0x4a621c['shift']());}catch(_0x39fc92){_0x4a621c['push'](_0x4a621c['shift']());}}}(_0x5614,0xe4b34),reply(_0x23b6d4(0xd6)));
                 break
               case 'ssweb':  
                    if (isBanned) return reply(mess.banned)
@@ -2453,7 +2453,7 @@ _${prefix}pinterest_
 _${prefix}infogempa_
 _${prefix}infocovid_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}owner`, buttonText: {displayText: 'OWNER BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2550,7 +2550,7 @@ case 'bc2':
              for (let _ of anu) {
 client.sendMessage(_.jid, 
 			{"contentText": `*「 BROADCAST ${namabot} 」*\n\n${body.slice(4)}`,
-			"footerText": '©APRILIA',
+			"footerText": '©Rizqi',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "MENU BOT"
@@ -2637,7 +2637,7 @@ _${prefix}setppbot_
 _${prefix}clearall_
 _${prefix}kickall_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2670,7 +2670,7 @@ _${prefix}bocil_
 _${prefix}ghea_
 _${prefix}rikagusriani_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2683,14 +2683,14 @@ if (!isNsfw) return reply (mess.nsfw)
 if (isBanned) return reply (mess.banned)
 if (!isGroup) return reply(mess.only.group)
                reply(mess.wait)
-                buffer = await getBuffer(`https://api.dapuhy.xyz/api/nsfw/nsfwfutanari?apikey=B0ZTfKR00k`)
+                buffer = await getBuffer(`https://api.dapuhy.xyz/api/nsfw/nsfwfutanari?apikey=riski12`)
                 const bba = await client.prepareMessage(from, buffer, MessageType.image)
 
             const buttons = [{buttonId:`${prefix + command}`,buttonText: {displayText: 'Next️'}, type: 1}]
 
             const ButonsMerssages = {
 
-            contentText: `_© By Aprilia_`,
+            contentText: `_© By Rizqi_`,
 
             buttons: buttons,
 
@@ -2711,7 +2711,7 @@ if (!isGroup) return reply(mess.only.group)
           reply(mess.wait)
           aku = (`https://hardianto.xyz/api/anime/random?nsfw=anal&apikey=hardianto`)
           kon = await getBuffer(aku)
-          pll = `© By Aprilia`
+          pll = `© By Rizqi`
    sendButImage(from, pll, `Klik Next Untuk Melanjutkan`, kon, [                      
           {
             buttonId: `${prefix}anal`,
@@ -2753,7 +2753,7 @@ const sa = await client.prepareMessage(from, buffer, MessageType.image)
 
             const ButonsMessages = {
 
-            contentText: `_© By Aprilia_`,
+            contentText: `_© By Rizqi_`,
 
             buttons: butons,
 
@@ -2777,7 +2777,7 @@ const sa = await client.prepareMessage(from, buffer, MessageType.image)
 
             const ButtonMessages = {
 
-            contentText: `_© By Aprilia_`,
+            contentText: `_© By Rizqi_`,
 
             buttons: buttosn,
 
@@ -2822,7 +2822,7 @@ _${prefix}panties_
 _${prefix}pussy_
 _${prefix}things_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -2831,7 +2831,7 @@ break
 /*______________________________________PRIMBON MENU____________________________*/
 case 'artinama':
 if (isBanned) return reply (mess.banned)
-if (!q) return reply (`Example: ${prefix + command} Aprilia`)
+if (!q) return reply (`Example: ${prefix + command} Rizqi`)
 anu = await fetchJson (`https://api.loli.loveslife.biz/api/artinama?apikey=4s52PLhnkoWp5J49Kmbu&nama=${q}`)
 reply(anu.result)
 break
@@ -2850,7 +2850,7 @@ _${prefix}artinama_
 _${prefix}tebakumur_
 *DIKIT YE BRO SOALNYA BANYAK ERORNYA🙂*
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3060,7 +3060,7 @@ _${prefix}bokep22_
 _${prefix}bokep23_
 _${prefix}bokep24_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3068,7 +3068,7 @@ break
 /*______________________________________BATAS BOKEP____________________________*/
 /*______________________________________ISLAM MENU____________________________*/
 case 'ayatkursi':
-anu = await fetchJson (`https://api.dapuhy.xyz/api/islam/ayatkursi?apikey=B0ZTfKR00k`)
+anu = await fetchJson (`https://api.dapuhy.xyz/api/islam/ayatkursi?apikey=riski12`)
 w = anu.result
 teks = `Tafsir : ${w.tafsir}\nArab : ${w.arabic}\nTranslite : ${w.translation}\nLatin : ${w.latin}`
 reply(teks)
@@ -3076,7 +3076,7 @@ break
 case 'kisahnabi':
                if (isBanned) return reply (mess.banned)
                if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
-               anu = await fetchJson(`https://api.dapuhy.xyz/api/islam/kisahnabi?nabi=${q}&apikey=B0ZTfKR00k`)
+               anu = await fetchJson(`https://api.dapuhy.xyz/api/islam/kisahnabi?nabi=${q}&apikey=riski12`)
                anu1 = `*NAMA NABI* : ${anu.name}\n`
                anu1 += `*KELAHIRAN* : ${anu.kelahiran}\n`
                anu1 += `*WAFAT USIA* : ${anu.wafat_usia}\n` 
@@ -3093,7 +3093,7 @@ _${prefix}kisahnabi_
 
 *MARI BERHIJRAH*
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3641,7 +3641,7 @@ _${prefix}sound67_
 _${prefix}sound68_
 _${prefix}sound69_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3737,7 +3737,7 @@ _${prefix}attp_
 _${prefix}ttp_
 _${prefix}smeme_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3785,7 +3785,7 @@ case 'komiku':
 case 'ppcp':
 case 'ppcouple':
 if (isBanned) return reply(mess.banned)
-anu = await fetchJson(`https://api.caliph71.xyz/api/ppcouple?apikey=wTQQ7OqB`)
+anu = await fetchJson(`https://api.caliph71.xyz/api/ppcouple?apikey=j2FW4s8m`)
 buff1 = await getBuffer (anu.result.male)
 client.sendMessage(from, buff1, image, {quoted: mek, caption: 'COWOK'})
 buff2 =await getBuffer (anu.result.female)
@@ -3806,7 +3806,7 @@ case 'waifu':
 
             const ButtonssMessages = {
 
-            contentText: `_© By Aprilia_`,
+            contentText: `_© By Rizqi_`,
 
             buttons: buttonnsss,
 
@@ -3876,7 +3876,7 @@ _${prefix}otaku_
 _${prefix}komiku_
 _${prefix}ppcp_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
@@ -3919,7 +3919,7 @@ _${prefix}upswimage_
 _${prefix}upswvideo_
 _${prefix}upswteks_
 `
-sendButMessage(from, menu, '_*BY APRILIA*_', [
+sendButMessage(from, menu, '_*BY Rizqi*_', [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'MENU BOT:)'}, type: 1},
 {buttonId: `${prefix}donasi`, buttonText: {displayText: 'DONASI BOT ;)'}, type: 1}
 ]);
